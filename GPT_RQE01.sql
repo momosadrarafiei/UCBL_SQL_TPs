@@ -1,0 +1,15 @@
+SELECT nomF
+FROM FORETS;
+
+SELECT département
+FROM FORETS;
+
+SELECT DISTINCT type
+FROM GESTIONNAIRES;
+
+SELECT DISTINCT département AS liste_departements
+FROM FORETS;
+
+SELECT DISTINCT type AS type_gestionnaires
+FROM GESTIONNAIRES;
+

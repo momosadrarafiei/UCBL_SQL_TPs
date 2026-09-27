@@ -1,0 +1,31 @@
+SELECT DISTINCT departement AS  liste_dép
+FROM FORETS;
+
+SELECT *
+FROM FORETS
+WHERE superficie BETWEEN 500 AND 4000
+ORDER BY superficie DESC;
+
+SELECT *
+FROM FORETS
+WHERE nomF LIKE '%cha%';
+
+SELECT f.nomF, g.nomG
+FROM FORETS f 
+INNER JOIN GESTIONNAIRES g
+ON f.idG = g.idG;
+
+SELECT f.nomF, g.nomG
+FROM FORETS f
+INNER JOIN GESTIONNAIRES g
+ON f.idG = g.idG
+WHERE département = 'Isère';
+
+SELECT g.nomG, f.nomF
+FROM GESTIONNAIRES g
+LEFT JOIN FORETS f
+ON g.idG = f.idG;
+
+SELECT *
+FROM GESTIONNAIRES g
+WHERE type 
