@@ -14,3 +14,5 @@ ORDER BY superficie DESC;
 SELECT *
 FROM FORETS
 WHERE nomF LIKE %cha%;
+
+-- E04
