@@ -13,6 +13,6 @@ ORDER BY superficie DESC;
 -- E03
 SELECT *
 FROM FORETS
-WHERE nomF LIKE %cha%;
+WHERE nomF LIKE '%cha%';
 
 -- E04
