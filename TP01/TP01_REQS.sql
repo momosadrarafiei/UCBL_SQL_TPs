@@ -16,3 +16,7 @@ FROM FORETS
 WHERE nomF LIKE '%cha%';
 
 -- E04
+SELECT nomF, nomG
+FROM FORETS f
+INNER JOIN GESTIONNAIRES g
+ON f.idG = g.idG;

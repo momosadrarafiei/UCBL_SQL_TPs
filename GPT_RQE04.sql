@@ -1,0 +1,29 @@
+-- E01
+SELECT nomF, type
+FROM FORETS f
+INNER JOIN GESTIONNAIRES g
+ON f.idG = g.idG;
+
+-- E02
+SELECT nomG, nomF
+FROM GESTIONNAIRES g
+INNER JOIN FORETS f
+ON g.idG = f.idG;
+
+-- E03
+SELECT f.nomF, f.idG
+FROM FORETS f
+INNER JOIN GESTIONNAIRES g
+ON f.idG = g.idG;
+
+-- E04
+SELECT nomF, nomG, type
+FROM FORETS f
+INNER JOIN GESTIONNAIRES g
+ON f.idG = g.idG;
+
+-- E05
+SELECT f.idF, g.nomG
+FROM FORETS f
+INNER JOIN GESTIONNAIRES g
+ON f.idG = g.idG;
