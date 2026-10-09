@@ -20,3 +20,10 @@ SELECT nomF, nomG
 FROM FORETS f
 INNER JOIN GESTIONNAIRES g
 ON f.idG = g.idG;
+
+-- E05
+SELECT f.nomF, g.nomG
+FROM FORETS f
+INNER JOIN GESTIONNAIRES g
+ON f.idG = g.idG
+WHERE département = 'Isère';
